@@ -576,6 +576,10 @@ header {
 }
 /*------PORTFOLIO-----*/
 /*------CASES-----*/
+.cases-link {
+  text-decoration: none;
+  
+}
 
 .cases-list {
   display: flex;
@@ -594,7 +598,8 @@ header {
 .cases-list-item:not(:first-child) {
   margin-left: 8px;
 }
-.cases-cards-items:hover {
+.cases-cards-items:hover,
+.cases-cards-items:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -606,12 +611,14 @@ header {
 .cases-filters-button {
   border: 0px;
   border-radius: 4px;
+  padding: 6px 22px;
   font-family: var(--main-font-family);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
   text-align: center;
+  
 
   color: var(--title-text-color);
   background-color: var(--bg-filters-btn);
@@ -640,7 +647,7 @@ header {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
-
+color:var(--main-text-color);
   letter-spacing: 0.03em;
 }
 /*------TEST-----*/
